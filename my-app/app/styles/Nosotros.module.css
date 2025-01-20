@@ -2,6 +2,7 @@
     position: relative;
     width: 100%;
     height: 100vh;
+    background-color: white;
     background-image: url('/DELINEADOSS.png');
     background-size: cover;
     background-position: center;
@@ -116,10 +117,12 @@
 @media (max-width: 1024px) {
     .title {
       font-size: 3rem; /* Reduce el tamaño de fuente */
+      color: black;
     }
     .description {
       font-size: 1rem;
       line-height: 1.4;
+      color: black;
     }
     .cards {
       align-items: center;
@@ -240,3 +243,61 @@
       margin-top: 1rem;
     }
   }
+
+.redBanner{
+    color: #991A10;
+    transform: rotate(-5deg);
+    text-align: center;
+    z-index: 3;
+}
+
+.bordeBanner{
+    background-color: #FFF1EB;
+    margin: 2%;
+    padding: 3% 2%;
+    border-radius: 20px;
+}
+
+@media (max-width: 1024px) {
+    .redBanner {
+        margin-top: 20%;
+        font-size: 70%; /* Reduce el tamaño del texto */
+    }
+    .bordeBanner {
+        margin: 3%; /* Ajusta márgenes */
+        padding: 4% 3%; /* Ajusta el padding */
+    }
+}
+
+/* Para pantallas de hasta 820px (móviles grandes) */
+@media (max-width: 820px) {
+    .redBanner {
+        margin-top: 1%;
+        font-size: 70%; /* Texto más pequeño */
+    }
+    .bordeBanner { 
+        padding: 5% 4%;
+    }
+}
+@media (max-width: 700px) {
+    .redBanner {
+        margin-top: 1%;
+        font-size: 40%; /* Texto más pequeño */
+    }
+    .bordeBanner { 
+        padding: 5% 4%;
+    }
+}
+
+/* Para pantallas de hasta 480px (móviles pequeños) */
+@media (max-width: 480px) {
+    .redBanner {
+        font-size: 20%; /* Texto más pequeño en móviles pequeños */
+        transform: rotate(-3deg); /* Menos rotación en pantallas muy pequeñas */
+    }
+    .bordeBanner {
+        margin: 5%; /* Mayor separación */
+        padding: 6% 5%;
+        border-radius: 15px; /* Bordes más sutiles */
+    }
+}

@@ -68,6 +68,10 @@ const Nosotros = () => {
               height={150}
               className={styles.redLogo}
             />
+        
+        <div className={styles.redBanner}>
+          <span className={`${styles.bordeBanner} estilo2`}>EL EQUIPO DE CONFIANZA PARA TU PROYECTO MUSICAL</span>
+        </div>
       </div>
     </div>
   );
