@@ -3,7 +3,7 @@ import styles from '@/app/styles/Hero.module.css'
 
 export default function Hero() {
   return (
-    <div className={styles.heroContainer}>
+    <div className={styles.heroContainer} id="hero">
       <div className={styles.overlay}>
         <h1 className={`${styles.heroText} estilo`}>
           EL ESTUDIO DE <br /> MÚSICA URBANA <br /> <span>N1</span> DE LA ISLA
