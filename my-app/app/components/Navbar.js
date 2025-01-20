@@ -46,10 +46,10 @@ const Navbar = () => {
 
         {/* Menú de navegación en desktop */}
         <div className="hidden md:flex space-x-6 text-gray-800 text-white">
-          <a href="#nosotros" className="hover:text-orange-500 estilo">NOSOTROS</a>
-          <a href="#servicios" className="hover:text-orange-500 estilo">SERVICIOS</a>
-          <a href="#trabajos" className="hover:text-orange-500 estilo">TRABAJOS</a>
-          <a href="#contacto" className="hover:text-orange-500 estilo">CONTACTO</a>
+          <a href="#nosotros" className="hover:text-blue-500 estilo">NOSOTROS</a>
+          <a href="#servicios" className="hover:text-blue-500 estilo">SERVICIOS</a>
+          <a href="#trabajos" className="hover:text-blue-500 estilo">TRABAJOS</a>
+          <a href="#contacto" className="hover:text-blue-500 estilo">CONTACTO</a>
         </div>
       </div>
 
@@ -59,10 +59,10 @@ const Navbar = () => {
           isOpen ? 'block' : 'hidden'
         } md:hidden bg-white shadow-md mt-4 space-y-4 px-6 py-4 text-gray-800`}
       >
-        <a href="#nosotros" className="block hover:text-orange-500 estilo">NOSOTROS</a>
-        <a href="#servicios" className="block hover:text-orange-500 estilo">SERVICIOS</a>
-        <a href="#trabajos" className="block hover:text-orange-500 estilo">TRABAJOS</a>
-        <a href="#contacto" className="block hover:text-orange-500 estilo">CONTACTO</a>
+        <a href="#nosotros" className="block hover:text-blue-500 estilo">NOSOTROS</a>
+        <a href="#servicios" className="block hover:text-blue-500 estilo">SERVICIOS</a>
+        <a href="#trabajos" className="block hover:text-blue-500 estilo">TRABAJOS</a>
+        <a href="#contacto" className="block hover:text-blue-500 estilo">CONTACTO</a>
       </div>
     </nav>
   );
