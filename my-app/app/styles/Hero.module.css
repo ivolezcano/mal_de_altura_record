@@ -1,135 +1,139 @@
 .heroContainer {
     position: relative;
     width: 100%;
-    height: 100vh; /* Asegura que el fondo ocupe toda la altura del viewport */
+    height: 100vh; 
     background-image: url('/hero_bg.png'); 
-    background-size: cover; /* El fondo siempre cubre todo el viewport */
+    background-size: cover; /* Asegura que la imagen completa se vea */
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Evita desbordamientos */
-  }
+}
   
   .overlay {
-    position: absolute; /* Para que se mantenga por encima del fondo */
+    position: relative; /* Contenedor relativo para posicionar el logo */
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column; /* Elementos apilados verticalmente */
     justify-content: center;
     align-items: center;
     padding: 20px;
-    z-index: 1; /* Asegura que el overlay esté por encima del fondo */
   }
   
   .heroText {
     color: #fff;
-    text-align: left; /* Alineado a la izquierda por defecto */
-    font-size: 6rem; /* Tamaño grande por defecto */
+    text-align: left;
+    font-size: 6rem; /* Ajuste inicial */
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.2;
     margin-bottom: 20px;
-    z-index: 2; /* Asegura que el texto esté por encima del fondo */
   }
   
   .heroText span {
     text-decoration: underline;
   }
-  .logo_round{
-    margin-bottom: 150px;
+  
+  .logo_round {
+    position: absolute; /* Permite mover el logo con respecto al contenedor */
+    top: 40%; /* Ajusta hacia arriba/abajo desde la parte superior del contenedor .overlay */
+    right: 16%; /* Ajusta hacia la izquierda/derecha */
+    width: 5%; /* Tamaño del logo */
+    height: auto;
+    z-index: 10; /* Asegura que esté encima del texto */
   }
   
-  /* Media Queries para hacer el diseño responsive */
   
-  /* Para pantallas grandes como tablets en modo horizontal */
-  @media (max-width: 1200px) {
-    .heroText {
-      font-size: 4.5rem; /* Ajuste para pantallas más pequeñas */
-      margin-bottom: 15px;
-    }
+/* Media queries para diseño ultra responsive */
+
+@media (max-width: 1400px) {
+  .heroText {
+    font-size: 5rem;
   }
-  
-  /* Para tablets en modo vertical */
-  @media (max-width: 1024px) {
-    .heroText {
-      font-size: 3.5rem; /* Más pequeño para pantallas de tablets */
-      margin-bottom: 15px;
-      text-align: left; /* Centrado en pantallas más pequeñas */
-    }
+
+  .logo_round {
+    width: 6%; /* Ajusta el tamaño para pantallas grandes */
+    top: 38%; /* Mantiene la posición vertical */
+    right: 15%; /* Mantiene la posición horizontal */
   }
-  
-  @media (max-width: 1200px) {
-    .heroText {
-      font-size: 4.5rem; /* Ajuste para pantallas más pequeñas */
-      margin-bottom: 15px;
-    }
-  
-    .logo_round {
-      width: 70px; /* Ajuste de tamaño del logo */
-    }
+}
+
+@media (max-width: 1200px) {
+  .heroText {
+    font-size: 4.5rem;
   }
-  
-  /* Para tablets en modo vertical */
-  @media (max-width: 1024px) {
-    .heroText {
-      font-size: 3.5rem; /* Más pequeño para pantallas de tablets */
-      margin-bottom: 15px;
-      text-align: left; /* Mantener alineación a la izquierda */
-    }
-  
-    .logo_round {
-      width: 60px; /* Ajuste de tamaño del logo */
-    }
+
+  .logo_round {
+    width: 7%; /* Un poco más grande para pantallas medianas */
+    top: 37%;
+    right: 14%;
   }
-  
-  /* Para dispositivos móviles pequeños */
-  @media (max-width: 768px) {
-    .heroText {
-      font-size: 2rem; /* Ajuste del tamaño del texto */
-      line-height: 1.3; /* Espaciado entre líneas */
-      padding: 0 20px; /* Agrega padding para que el texto no toque los bordes */
-      margin-bottom: 10px;
-      text-align: left; /* Mantener texto alineado a la izquierda */
-    }
-  
-    .logo_round {
-      width: 50px; 
-    }
+}
+
+@media (max-width: 1024px) {
+  .heroText {
+    font-size: 3.5rem;
   }
-  
-  /* Para pantallas aún más pequeñas, como smartphones pequeños */
-  @media (max-width: 480px) {
-    .heroContainer {
-      height: 100vh; /* Mantén el fondo cubriendo todo el viewport */
-      padding: 20px 0; /* Añadir un poco de padding para darle espacio al contenido */
-    }
-  
-    .heroText {
-      font-size: 1.5rem; /* Ajuste más pequeño para pantallas muy pequeñas */
-      line-height: 1.3;
-      margin-bottom: 10px;
-      padding: 0 15px; /* Añadir padding */
-      text-align: left; /* Mantener texto alineado a la izquierda */
-    }
-  
-    .logo_round {
-      width: 40px; /* Ajuste del logo para pantallas pequeñas */
-    }
+
+  .logo_round {
+    width: 8%; /* Aumenta el tamaño del logo para tabletas */
+    top: 36%;
+    right: 13%;
   }
-  
-  /* Para pantallas muy pequeñas, como algunos modelos de teléfonos */
-  @media (max-width: 360px) {
-    .heroText {
-      font-size: 1.5rem; /* Ajuste para pantallas muy pequeñas */
-      padding: 0 10px; /* Más padding para evitar que el texto toque los bordes */
-      margin-bottom: 5px;
-      text-align: left; /* Mantener texto alineado a la izquierda */
-    }
-  
-    .logo_round {
-      width: 35px; /* Ajuste aún más pequeño para el logo */
-    }
+}
+
+@media (max-width: 768px) {
+  .heroText {
+    font-size: 3rem;
   }
+
+  .logo_round {
+    width: 10%; /* Aumenta más para pantallas de tamaño medio */
+    top: 35%;
+    right: 12%;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroText {
+    font-size: 2.8rem;
+  }
+
+  .logo_round {
+    width: 12%; /* Más grande para pantallas más pequeñas */
+    top: 34%;
+    right: 11%;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroContainer {
+    height: 100vh; /* Mantiene el fondo cubriendo el 100% del viewport */
+  }
+
+  .heroText {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    padding: 0 10px;
+  }
+
+  .logo_round {
+    width: 15%; /* Más grande para dispositivos móviles pequeños */
+    top: 31%;
+    right: 10%;
+  }
+}
+
+@media (max-width: 360px) {
+  .heroText {
+    font-size: 1.6rem;
+  }
+
+  .logo_round {
+    width: 18%; /* Ajusta el tamaño para pantallas muy pequeñas */
+    top: 30%;
+    right: 9%;
+  }
+}
