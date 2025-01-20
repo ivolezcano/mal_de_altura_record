@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
   
   .overlay {
     position: relative; /* Contenedor relativo para posicionar el logo */
@@ -38,101 +38,102 @@
   
   .logo_round {
     position: absolute; /* Permite mover el logo con respecto al contenedor */
-    top: 360px; /* Ajusta hacia arriba/abajo desde la parte superior del contenedor .overlay */
-    right: 270px; /* Ajusta hacia la izquierda/derecha */
-    width: 80px; /* Tamaño del logo */
+    top: 40%; /* Ajusta hacia arriba/abajo desde la parte superior del contenedor .overlay */
+    right: 16%; /* Ajusta hacia la izquierda/derecha */
+    width: 5%; /* Tamaño del logo */
     height: auto;
     z-index: 10; /* Asegura que esté encima del texto */
   }
   
-  /* Media queries para diseño ultra responsive */
   
-  @media (max-width: 1400px) {
-    .heroText {
-      font-size: 5rem;
-    }
-  
-    .logo_round {
-      width: 70px;
-      top: 420px;
-      right: 230px;
-    }
+/* Media queries para diseño ultra responsive */
+
+@media (max-width: 1400px) {
+  .heroText {
+    font-size: 5rem;
   }
-  
-  @media (max-width: 1200px) {
-    .heroText {
-      font-size: 4.5rem;
-    }
-  
-    .logo_round {
-      width: 60px;
-      top: 460px;
-      right: 200px;
-    }
+
+  .logo_round {
+    width: 6%; /* Ajusta el tamaño para pantallas grandes */
+    top: 38%; /* Mantiene la posición vertical */
+    right: 15%; /* Mantiene la posición horizontal */
   }
-  
-  @media (max-width: 1024px) {
-    .heroText {
-      font-size: 3.5rem;
-    }
-  
-    .logo_round {
-      width: 50px;
-      top: 520px;
-      right: 160px;
-    }
+}
+
+@media (max-width: 1200px) {
+  .heroText {
+    font-size: 4.5rem;
   }
-  
-  @media (max-width: 768px) {
-    .heroText {
-      font-size: 3rem;
-    }
-  
-    .logo_round {
-      width: 45px;
-      top: 560px;
-      right: 130px;
-    }
+
+  .logo_round {
+    width: 7%; /* Un poco más grande para pantallas medianas */
+    top: 37%;
+    right: 14%;
   }
-  
-  @media (max-width: 600px) {
-    .heroText {
-      font-size: 2.8rem;
-    }
-  
-    .logo_round {
-      width: 40px;
-      top: 580px;
-      right: 100px;
-    }
+}
+
+@media (max-width: 1024px) {
+  .heroText {
+    font-size: 3.5rem;
   }
-  
-  @media (max-width: 480px) {
-    .heroContainer {
-      height: 100vh; /* Mantiene el fondo cubriendo el 100% del viewport */
-    }
-  
-    .heroText {
-      font-size: 1.8rem;
-      line-height: 1.4;
-      padding: 0 10px;
-    }
-  
-    .logo_round {
-      width: 35px;
-      top: 50px;
-      right: 80px;
-    }
+
+  .logo_round {
+    width: 8%; /* Aumenta el tamaño del logo para tabletas */
+    top: 36%;
+    right: 13%;
   }
-  
-  @media (max-width: 360px) {
-    .heroText {
-      font-size: 1.6rem;
-    }
-  
-    .logo_round {
-      width: 30px;
-      top: 60px;
-      right: 50px;
-    }
+}
+
+@media (max-width: 768px) {
+  .heroText {
+    font-size: 3rem;
   }
+
+  .logo_round {
+    width: 10%; /* Aumenta más para pantallas de tamaño medio */
+    top: 35%;
+    right: 12%;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroText {
+    font-size: 2.8rem;
+  }
+
+  .logo_round {
+    width: 12%; /* Más grande para pantallas más pequeñas */
+    top: 34%;
+    right: 11%;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroContainer {
+    height: 100vh; /* Mantiene el fondo cubriendo el 100% del viewport */
+  }
+
+  .heroText {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    padding: 0 10px;
+  }
+
+  .logo_round {
+    width: 15%; /* Más grande para dispositivos móviles pequeños */
+    top: 31%;
+    right: 10%;
+  }
+}
+
+@media (max-width: 360px) {
+  .heroText {
+    font-size: 1.6rem;
+  }
+
+  .logo_round {
+    width: 18%; /* Ajusta el tamaño para pantallas muy pequeñas */
+    top: 30%;
+    right: 9%;
+  }
+}
