@@ -1,0 +1,152 @@
+.heroContainer {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    background-image: url('/hero_bg.png'); 
+    background-size: cover; /* Asegura que la imagen completa se vea */
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overlay {
+    position: relative; /* Contenedor relativo para posicionar el logo */
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    flex-direction: column; /* Elementos apilados verticalmente */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .heroText {
+    color: #fff;
+    text-align: center;
+    font-size: 6rem; /* Ajuste inicial */
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  
+  .heroText span {
+    text-decoration: underline;
+  }
+  
+  .logo_round {
+    position: absolute; /* Permite mover el logo con respecto al contenedor */
+    top: 360px; /* Ajusta hacia arriba/abajo desde la parte superior del contenedor .overlay */
+    right: 270px; /* Ajusta hacia la izquierda/derecha */
+    width: 80px; /* Tamaño del logo */
+    height: auto;
+    z-index: 10; /* Asegura que esté encima del texto */
+  }
+  
+  /* Media queries para diseño ultra responsive */
+  
+  @media (max-width: 1400px) {
+    .heroText {
+      font-size: 5rem;
+      text-align: left;
+    }
+  
+    .logo_round {
+      width: 70px; /* Logo ajustado para pantallas más grandes */
+      top: 420px;
+      right: 230px;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    /* Para pantallas grandes como tablets en modo horizontal */
+    .heroText {
+      font-size: 4.5rem;
+      text-align: left;
+    }
+  
+    .logo_round {
+      width: 60px; /* Escala el logo para tablets grandes */
+      top: 460px;
+      right: 200px;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    /* Para tablets en modo vertical */
+    .heroText {
+      font-size: 3.5rem;
+      text-align: left;
+    }
+  
+    .logo_round {
+      width: 50px; /* Escala el logo para tablets */
+      top: 520px;
+      right: 160px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Para pantallas de tamaño medio, como tablets o pequeños portátiles */
+    .heroText {
+      font-size: 3rem;
+      text-align: left;
+    }
+  
+    .logo_round {
+      width: 45px; /* Escala el logo para pantallas más pequeñas */
+      top: 560px;
+      right: 130px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    /* Para dispositivos móviles con pantallas medianas */
+    .heroText {
+        text-align: left;
+      font-size: 2.8rem;
+    }
+  
+    .logo_round {
+      width: 40px; /* Escala el logo para pantallas muy pequeñas */
+      top: 580px;
+      right: 100px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Para móviles pequeños */
+    .heroContainer {
+      height: auto; /* Permite que el contenedor crezca en dispositivos pequeños */
+    }
+  
+    .heroText {
+      font-size: 1.8rem;
+      text-align: left;
+      line-height: 1.4;
+      padding: 0 10px; /* Añadir un poco de relleno para evitar que el texto toque los bordes */
+    }
+  
+    .logo_round {
+      width: 35px; /* Escala el logo para móviles */
+      top: 50px;
+      right: 80px; /* Ajuste de la posición para dispositivos muy pequeños */
+    }
+  }
+  
+  @media (max-width: 360px) {
+    /* Para pantallas muy pequeñas, como algunos modelos de teléfonos */
+    .heroText {
+      font-size: 1.6rem; /* Ajuste de tamaño para dispositivos muy pequeños */
+      text-align: left;
+    }
+  
+    .logo_round {
+      width: 30px; /* Escala aún más el logo */
+      top: 60px;
+      right: 50px; /* Ajuste de la posición */
+    }
+  }
