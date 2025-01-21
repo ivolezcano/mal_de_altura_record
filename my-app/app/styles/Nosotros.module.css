@@ -352,86 +352,64 @@
   justify-content: space-around;
 }
 
+.bannerBloques3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+
+
 /* Pantallas pequeñas (teléfonos) */
 
-@media (max-width: 600px) {
-  .title1 {
-    font-size: 140%;
-    padding: 4% 6%;
-  }
-  .paragraph {
-    margin: -5%;
-    padding: 15% 10px;
-  }
+/* Teléfonos pequeños (vertical, menos de 360px) */
+@media (max-width: 359px) {
   .bannerBloques{
+    margin-top: -30%;
+  }
+  .bannerBloques2{
     margin-top: -60%;
   }
-  .bannerBloques2 {
-    margin-top: -110%; /* Reducir la distancia entre bloques */
+  .bannerBloques3{
+    margin-top: -20%
+  }
+}
+
+/* Teléfonos móviles (360px a 599px) */
+@media (min-width: 360px) and (max-width: 599px) {
+  .bannerBloques{
+    margin-top: -30%;
+  }
+  .bannerBloques2{
+    margin-top: -60%;
   }
   .bannerBloques3{
-    margin-top: -50%;
-  }
-}
-@media (max-width: 380px) {
-  .title1 {
-    font-size: 140%;
-    padding: 4% 6%;
-  }
-  .paragraph {
-    margin: -5%;
-    padding: 15% 10px;
-  }
-  .bannerBloques{
-    margin-top: -10%;
-  }
-  .bannerBloques2 {
-    margin-top: -60%; /* Reducir la distancia entre bloques */
+    margin-top: -20%
   }
 }
 
-/* Pantallas medianas (tabletas) */
-@media (min-width: 601px) and (max-width: 1024px) {
-  .title1 {
-    font-size: 150%;
-    padding: 3% 5%;
-  }
-  .paragraph {
-    margin: -7%;
-    padding: 12% 20px;
-  }
+/* Teléfonos grandes y pequeñas tabletas (600px a 767px) */
+@media (min-width: 600px) and (max-width: 767px) {
   .bannerBloques{
-    margin-top: -50%;
+    margin-top: -35%;
   }
-  .bannerBloques2 {
-    margin-top: -100%; /* Reducir la distancia entre bloques */
+  .bannerBloques2{
+    margin-top: -60%;
   }
   .bannerBloques3{
+    margin-top: -25%
+  }
+}
+
+/* Tablet estándar (768px a 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .bannerBloques{
+    margin-top: -35%;
+  }
+  .bannerBloques2{
     margin-top: -50%;
   }
-}
-
-/* Pantallas grandes (desktops) */
-@media (min-width: 1025px) {
-  .title1 {
-    font-size: 180%;
-    padding: 2% 4%;
-  }
-  .paragraph {
-    margin: -10%;
-    padding: 10% 25px;
-  }
-}
-
-/* Pantallas extra grandes */
-@media (min-width: 1440px) {
-  .bannerBloques, .bannerBloques2 {
-    padding: 40px;
-  }
-  .title1 {
-    font-size: 200%;
-  }
-  .paragraph {
-    padding: 8% 30px;
+  .bannerBloques3{
+    margin-top: -20%
   }
 }
