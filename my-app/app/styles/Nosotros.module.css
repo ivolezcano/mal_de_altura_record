@@ -193,15 +193,15 @@
     }
   
     .blackLogo {
-      width: 120px; /* Escala los logos */
+      width: 120px; 
       height: 120px;
       top: 10%;
       right: 80%;
     }
     .redLogo {
-        width: 120px; /* Escala los logos */
+        width: 120px; 
         height: 120px;
-        top: 60%;
+        top: 26%;
     }
 
   }
@@ -234,6 +234,9 @@
   
     .innerCard p, .innerCard2 p {
       font-size: 40%;
+    }
+    .redLogo{
+      top: 28%;
     }
   
     .redLogo,
@@ -294,6 +297,9 @@
     .overlay{
         width: 95%;
     }
+    .cardText p{
+      font-size: 61%;
+    }
     .redBanner {
         font-size: 45%; /* Texto más pequeño en móviles pequeños */
     }
@@ -301,4 +307,120 @@
         padding: 6% 5%;
         border-radius: 15px; /* Bordes más sutiles */
     }
+}
+
+.bannerBloques {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.title1 {
+  margin-top: 6%;
+  font-size: 160%;
+  background-color: #161616;
+  color: #FFF1EB;
+  padding: 2% 3%;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 12%;
+}
+
+.paragraph {
+  background-color: #161616;
+  color: #FFF1EB;
+  margin: -9%;
+  padding: 10% 15px;
+  border-radius: 15px;
+  text-align: center;
+}
+.bannerBloques2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* Pantallas pequeñas (teléfonos) */
+
+@media (max-width: 600px) {
+  .title1 {
+    font-size: 140%;
+    padding: 4% 6%;
+  }
+  .paragraph {
+    margin: -5%;
+    padding: 15% 10px;
+  }
+  .bannerBloques{
+    margin-top: -60%;
+  }
+  .bannerBloques2 {
+    margin-top: -110%; /* Reducir la distancia entre bloques */
+  }
+}
+@media (max-width: 380px) {
+  .title1 {
+    font-size: 140%;
+    padding: 4% 6%;
+  }
+  .paragraph {
+    margin: -5%;
+    padding: 15% 10px;
+  }
+  .bannerBloques{
+    margin-top: -10%;
+  }
+  .bannerBloques2 {
+    margin-top: -60%; /* Reducir la distancia entre bloques */
+  }
+}
+
+/* Pantallas medianas (tabletas) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .title1 {
+    font-size: 150%;
+    padding: 3% 5%;
+  }
+  .paragraph {
+    margin: -7%;
+    padding: 12% 20px;
+  }
+  .bannerBloques{
+    margin-top: -50%;
+  }
+  .bannerBloques2 {
+    margin-top: -100%; /* Reducir la distancia entre bloques */
+  }
+}
+
+/* Pantallas grandes (desktops) */
+@media (min-width: 1025px) {
+  .title1 {
+    font-size: 180%;
+    padding: 2% 4%;
+  }
+  .paragraph {
+    margin: -10%;
+    padding: 10% 25px;
+  }
+}
+
+/* Pantallas extra grandes */
+@media (min-width: 1440px) {
+  .bannerBloques, .bannerBloques2 {
+    padding: 40px;
+  }
+  .title1 {
+    font-size: 200%;
+  }
+  .paragraph {
+    padding: 8% 30px;
+  }
 }
