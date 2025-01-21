@@ -1,3 +1,16 @@
+:root {
+  --font-size-small: 140%;
+  --font-size-medium: 150%;
+  --font-size-large: 180%;
+  --font-size-xlarge: 200%;
+  --padding-small: 4% 6%;
+  --padding-medium: 3% 5%;
+  --padding-large: 2% 4%;
+  --paragraph-padding-mobile: 15% 10px;
+  --paragraph-padding-tablet: 12% 20px;
+  --paragraph-padding-desktop: 10% 25px;
+  --paragraph-padding-xl: 8% 30px;
+}
 .nosotrosContainer {
     position: relative;
     width: 100%;
@@ -346,69 +359,64 @@
   height: 100vh;
   padding: 20px;
 }
+.imagenes{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
 /* Pantallas pequeñas (teléfonos) */
 
+/* Pantallas pequeñas (móviles) */
 @media (max-width: 600px) {
-  .title1 {
-    font-size: 140%;
-    padding: 4% 6%;
-  }
-  .paragraph {
-    margin: -5%;
-    padding: 15% 10px;
-  }
-  .bannerBloques{
+  .bannerBloques {
     margin-top: -60%;
   }
   .bannerBloques2 {
-    margin-top: -110%; /* Reducir la distancia entre bloques */
+    margin-top: -110%;
+  }
+  .bannerBloques3 {
+    margin-top: -50%;
   }
 }
+
 @media (max-width: 380px) {
-  .title1 {
-    font-size: 140%;
-    padding: 4% 6%;
-  }
-  .paragraph {
-    margin: -5%;
-    padding: 15% 10px;
-  }
-  .bannerBloques{
+  .bannerBloques {
     margin-top: -10%;
   }
   .bannerBloques2 {
-    margin-top: -60%; /* Reducir la distancia entre bloques */
+    margin-top: -60%;
   }
 }
 
 /* Pantallas medianas (tabletas) */
 @media (min-width: 601px) and (max-width: 1024px) {
   .title1 {
-    font-size: 150%;
-    padding: 3% 5%;
+    font-size: var(--font-size-medium);
+    padding: var(--padding-medium);
   }
   .paragraph {
-    margin: -7%;
-    padding: 12% 20px;
+    padding: var(--paragraph-padding-tablet);
   }
-  .bannerBloques{
+  .bannerBloques {
     margin-top: -50%;
   }
   .bannerBloques2 {
-    margin-top: -100%; /* Reducir la distancia entre bloques */
+    margin-top: -100%;
+  }
+  .bannerBloques3 {
+    margin-top: -50%;
   }
 }
 
 /* Pantallas grandes (desktops) */
 @media (min-width: 1025px) {
   .title1 {
-    font-size: 180%;
-    padding: 2% 4%;
+    font-size: var(--font-size-large);
+    padding: var(--padding-large);
   }
   .paragraph {
-    margin: -10%;
-    padding: 10% 25px;
+    padding: var(--paragraph-padding-desktop);
   }
 }
 
@@ -418,9 +426,9 @@
     padding: 40px;
   }
   .title1 {
-    font-size: 200%;
+    font-size: var(--font-size-xlarge);
   }
   .paragraph {
-    padding: 8% 30px;
+    padding: var(--paragraph-padding-xl);
   }
 }

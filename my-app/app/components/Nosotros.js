@@ -82,7 +82,32 @@ const Nosotros = () => {
           <div className=''>
             <h2 className={`estilo ${styles.title1}`}>¿QUÉ HACEMOS?</h2>
             <h6 className={`estilo2 ${styles.paragraph}`}>SOMOS UN SELLO DISCOGRÁFICO Y PRODUCTORA MUSICAL <br/>INDEPENDIENTE. NOS ESPECIALIZAMOS EN LA PRODUCCIÓN DE <br/>MÚSICA URBANA. DE LOS ISLEÑOS PARA LOS ISLEÑOS, NACIMOS <br/>PARA REPRESENTAR E IMPULSAR A LOS MÚSICOS DE LA ISLA.</h6>
-          </div>
+          </div>  
+        </div>
+        <div className={styles.bannerBloques3}>
+          <div className=''>
+            <h2 className={`estilo ${styles.title1}`}>PARTNERS</h2>
+            <div className={styles.imagenes}>
+              <Image
+              src={'/the_bass_valey.png'}
+              alt='Logo de The Bass Valley'
+              width={249}
+              height={249}
+            />
+            <Image
+              src={'/emuband.png'}
+              alt='Logo de Emu band'
+              width={249}
+              height={249}
+            />
+            <Image
+              src={'/thebass.png'}
+              alt='Logo de The Bass Valley'
+              width={249}
+              height={249}
+            />
+            </div>
+          </div>  
         </div>
       </div>
     </div>
