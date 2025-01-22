@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
-import styles from '@/app/styles/Nosotros.module.css'; // Importa los estilos desde el archivo CSS Module
+import styles from '@/app/styles/Nosotros.module.css'; 
+import Link from 'next/link';
 
 const Nosotros = () => {
   return (
@@ -88,24 +89,33 @@ const Nosotros = () => {
           <div className=''>
             <h2 className={`estilo ${styles.title1}`}>PARTNERS</h2>
             <div className={styles.imagenes}>
+            <Link href={'#'}>
               <Image
-              src={'/the_bass_valey.png'}
-              alt='Logo de The Bass Valley'
-              width={249}
-              height={249}
-            />
-            <Image
-              src={'/emuband.png'}
-              alt='Logo de Emu band'
-              width={249}
-              height={249}
-            />
-            <Image
-              src={'/thebass.png'}
-              alt='Logo de The Bass Valley'
-              width={249}
-              height={249}
-            />
+                src={'/the_bass_valey.png'}
+                alt='Logo de The Bass Valley'
+                className={styles.imagen1}
+                width={249}
+                height={249}
+              />
+            </Link>
+            <Link href={'#'}>
+              <Image
+                src={'/emuband.png'}
+                alt='Logo de Emu band'
+                className={styles.imagen2}
+                width={249}
+                height={249}
+              />
+            </Link>
+            <Link href={'https://www.facebook.com'}>
+              <Image
+                src={'/thebass.png'}
+                alt='Logo de The Bass Valley'
+                className={styles.imagen3}
+                width={249}
+                height={249}
+              />
+            </Link>
             </div>
           </div>  
         </div>
