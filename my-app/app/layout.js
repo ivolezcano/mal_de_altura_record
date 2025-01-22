@@ -26,6 +26,9 @@ export const metadata = {
     "Las Palmas de Gran Canaria",
     "Canarias",
     "artistas",
+    "estudio de grabación", 
+    "mezcla y mastering", 
+    "records",
   ]
 }
 

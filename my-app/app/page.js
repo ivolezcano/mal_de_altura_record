@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Nosotros from "./components/Nosotros";
 import Separador from "./components/Separador";
+import Servicios from "./components/Servicios";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero/>
       <Nosotros />
       <Separador/>
+      <Servicios/>
     </>
   );
 }

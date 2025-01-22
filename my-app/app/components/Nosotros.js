@@ -8,7 +8,7 @@ const Nosotros = () => {
     <div className={styles.nosotrosContainer} id='nosotros'>
       <div className={styles.overlay}>
         <div className={styles.content}>
-          <h2 className={`${styles.title} estilo`}>Nosotros</h2>
+          <h2 className={`${styles.title} estilo`}>NOSOTROS</h2>
           <p className={`${styles.description} estilo`}>
           REFERENTE DE LA MÚSICA URBANA DE CANARIAS DESDE EL 2013
           </p>
