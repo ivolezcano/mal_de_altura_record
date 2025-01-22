@@ -1,0 +1,109 @@
+.separador1{
+    width: 100%;
+    height: 72vh;
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+.separador{
+    width: 100%;
+    height: 60vh;
+    background-image: url('/SEPARADOR.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner{
+    font-size: 200%;
+    color: #FFF1EB;
+    background-color: #1E1E1E;
+    padding: 3% 5%;
+    border-radius: 15px;
+    rotate: -7deg;
+    margin-bottom: 2%;
+}
+
+.banner2{
+    color: #FF3B00;
+    background-color: #FFF1EB;
+    text-align: center;
+    border-radius: 15px;
+    padding: 3% 4%;
+}
+/* Teléfonos pequeños (vertical, menos de 360px) */
+@media (max-width: 359px) {
+    .banner{
+        font-size: 80%;
+    }
+    .banner2{
+        font-size: 80%;
+    }
+    .separador1{
+        height: 1vh;
+    }
+  }
+  
+  /* Teléfonos móviles (360px a 599px) */
+  @media (min-width: 360px) and (max-width: 599px) {
+    .banner{
+        font-size: 80%;
+    }
+    .banner2{
+        font-size: 80%;
+    }
+    .separador1{
+        height: 1vh;
+    }
+  }
+  
+  /* Teléfonos grandes y pequeñas tabletas (600px a 767px) */
+  @media (min-width: 600px) and (max-width: 767px) {
+    .banner{
+        font-size: 80%;
+    }
+    .banner2{
+        font-size: 80%;
+    }
+    .separador1{
+        height: 1vh;
+    }
+  }
+  
+  /* Tablet estándar (768px a 1023px) */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .banner{
+        font-size: 80%;
+    }
+    .banner2{
+        font-size: 80%;
+    }
+    .separador1{
+        height: 1vh;
+    }
+  }
+  
+  /* Laptop pequeña o tablet horizontal (1024px a 1279px) */
+  @media (min-width: 1024px) and (max-width: 1279px) {
+    
+  }
+  
+  /* Laptop estándar (1280px a 1439px) */
+  @media (min-width: 1280px) and (max-width: 1439px) {
+    .banner{
+        font-size: 180%;
+    }
+    .banner2{
+        font-size: 130%;
+    }
+    .separador1{
+        height: 82vh;
+    }
+  }
