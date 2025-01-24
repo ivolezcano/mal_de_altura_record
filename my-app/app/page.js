@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Nosotros from "./components/Nosotros";
 import Separador from "./components/Separador";
 import Servicios from "./components/Servicios";
+import Calendly from "./components/Calendly";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Nosotros />
       <Separador/>
       <Servicios/>
+      <Calendly/>
     </>
   );
 }

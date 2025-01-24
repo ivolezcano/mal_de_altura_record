@@ -201,11 +201,11 @@
 
     .produccion h3,
     .mezcla h3 {
-        font-size: 1.5rem; /* Tamaño de fuente aún más pequeño */
-        margin-top: 15rem;
+      font-size: 1.5rem; /* Tamaño de fuente aún más pequeño */
+      padding-top: 15%;
     }
     .grabacion h3, .otros h3{
-        margin-bottom: 15rem;
+        padding-bottom: 20%;
     }
     .produccion p,
     .grabacion p,
@@ -213,6 +213,12 @@
     .otros p {
         font-size: 0.9rem; /* Ajusta el tamaño del texto */
         line-height: 1.4; /* Mejora la legibilidad */
+    }
+    .grabacion p, .otros p{
+      padding-top: 20%;
+    }
+    .produccion p, .mezcla p{
+      padding-bottom:15%;
     }
 
     .produccion,
