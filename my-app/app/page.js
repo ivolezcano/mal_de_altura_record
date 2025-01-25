@@ -5,6 +5,7 @@ import Separador from "./components/Separador";
 import Servicios from "./components/Servicios";
 import Calendly from "./components/Calendly";
 import Trabajos from "./components/trabajos";
+import Contacto from "./components/Contacto";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Servicios/>
       <Calendly/>
       <Trabajos/>
+      <Contacto/>
     </>
   );
 }

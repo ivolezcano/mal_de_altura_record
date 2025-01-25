@@ -37,7 +37,7 @@ export const ImagenTrabajo = ({ url, link }) => {
       <div className={styles.trabajosContainer}>
         <div className={styles.overlay}>
           <div className={styles.trabajosTitle}>
-            <h2 className={`${styles.title} estilo`}>TRABAJOS</h2>
+            <h2 className={`${styles.title} estilo`} id='trabajos'>TRABAJOS</h2>
             <p className={`${styles.description} estilo`}>
               APORTANDO A LA MÚSICA CANARIA DESDE 2013
             </p>

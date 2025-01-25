@@ -4,7 +4,7 @@ const Servicios = () => {
     return(
         <div className={styles.servicios}>
             <div className={styles.containerTitle}>
-                <h2 className={`estilo ${styles.title}`}>SERVICIOS</h2>
+                <h2 className={`estilo ${styles.title}`} id='servicios'>SERVICIOS</h2>
                 <p className={`estilo ${styles.parrafo1}`}>TE AYUDAMOS EN LA PRODUCCIÓN DE TU SIGUIENTE HIT</p>
             </div>
             <div className={styles.produccion}>
