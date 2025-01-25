@@ -1,0 +1,132 @@
+.trabajosContainer {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+  }
+
+
+.imagenUnique {
+    width: 363.41px; /* Ancho fijo */
+    height: 363.41px; /* Alto fijo */
+    object-fit: cover; /* Asegura que la imagen se recorte adecuadamente */
+    transition: transform 0.3s ease-in-out;
+}
+  
+.imagenContainer {
+position: relative;
+width: 100%; /* Ancho fijo */
+height: 100%; /* Alto fijo */
+overflow: hidden;
+border-radius: 1rem;
+}
+  
+  .imagenContainer:hover .imagenUnique {
+    pointer-events: auto;
+    transform: scale(1.1);
+  }
+  
+  .imagenOverlay {
+    position: absolute;
+    pointer-events: none; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .imagenContainer:hover .imagenOverlay {
+    opacity: 1;
+    cursor: pointer;
+  }
+  
+  .imagenText {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+.overlay {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+}
+
+.content {
+    margin-top: 10%;
+}
+
+.title {
+    font-size: 5rem; /* Tamaño inicial */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+  
+.description {
+    font-size: 1.2rem; /* Tamaño inicial */
+    line-height: 1.5;
+}
+
+/* Estilos responsivos */
+@media (max-width: 1024px) { /* Tablets */
+    .overlay {
+        width: 80%;
+    }
+
+    .title {
+        font-size: 4rem; /* Reduce el tamaño de la fuente */
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) { /* Dispositivos móviles grandes */
+    .overlay {
+        width: 90%;
+    }
+
+    .content {
+        margin-top: 5%; /* Reduce el espacio superior */
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) { /* Teléfonos móviles pequeños */
+    .overlay {
+        width: 100%;
+        padding: 0 10px; /* Añade espacio lateral */
+    }
+
+    .title {
+        font-size: 2.5rem;
+        text-align: center; /* Centra el texto */
+    }
+
+    .description {
+        font-size: 0.8rem;
+        text-align: justify; /* Mejora la lectura */
+    }
+    .imagenContainer {
+        position: relative;
+        width: 100%; /* Ancho fijo */
+        height: 100%; /* Alto fijo */
+    }
+}
