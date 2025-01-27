@@ -1,9 +1,10 @@
 import React from "react";
+import styles from '@/app/styles/footer.module.css'
 import { FaInstagram, FaYoutube, FaSpotify, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-pink-100 py-8">
+    <footer className={`bg-pink-100 py-8 ${styles.footer}`}>
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
         {/* Estudio 1 */}
         <div>
