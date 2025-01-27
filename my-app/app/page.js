@@ -6,6 +6,7 @@ import Servicios from "./components/Servicios";
 import Calendly from "./components/Calendly";
 import Trabajos from "./components/trabajos";
 import Contacto from "./components/Contacto";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Calendly/>
       <Trabajos/>
       <Contacto/>
+      <Footer/>
     </>
   );
 }
