@@ -23,12 +23,14 @@
   }
   
   .title {
+    color: black;
     font-size: 5rem;
     font-weight: bold;
     margin-bottom: 20px;
   }
   
   .description {
+    color: black;
     font-size: 1.2rem;
     line-height: 1.5;
   }
@@ -319,7 +321,7 @@
 }
 
 .title1 {
-  margin-top: 6%;
+  margin-top: 20%;
   font-size: 160%;
   background-color: #161616;
   color: #FFF1EB;
