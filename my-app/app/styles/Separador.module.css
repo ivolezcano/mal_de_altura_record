@@ -1,7 +1,7 @@
 .separador1{
     width: 100%;
     height: 72vh;
-    background-color: transparent;
+    background-color: white;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -9,6 +9,7 @@
     justify-content: center;
 }
 .separador{
+    margin-top: 20%;
     width: 100%;
     height: 60vh;
     background-image: url('/SEPARADOR.png');

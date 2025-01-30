@@ -30,7 +30,7 @@ const Nosotros = () => {
               />
               <div className={styles.cardText}>
                 <h3 className='estilo'>ANDRES</h3>
-                <p className='estilo2'>Productor E ingeniero de <br/>audio. administra del sello</p>
+                <p className='estilo2'>PRODUCTOR E INGENIERO DE <br/>AUDIO. ADMINISTRADOR DEL SELLO</p>
               </div>
             </div>
             <Image
@@ -57,7 +57,7 @@ const Nosotros = () => {
               />
               <div className={styles.cardText}>
                 <h3 className='estilo'>SAI</h3>
-                <p className='estilo2'>Productor y compositor.<br/>GESTIONA Y ASISTE A LOS<br/>ARTISTAS DEL SELLO.</p>
+                <p className='estilo2'>PRODUCTOR Y COMPOSITOR.<br/>GESTIONA Y ASISTE A LOS<br/>ARTISTAS DEL SELLO.</p>
               </div>
             </div>
           </div>
