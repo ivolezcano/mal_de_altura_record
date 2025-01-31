@@ -189,6 +189,10 @@
     .otros h3 {
         margin-bottom: 1.5rem; /* Espaciado mayor entre título y texto */
     }
+    .grabacion, .otros {
+      display: flex;
+      flex-direction: column-reverse;
+  }
 }
 
 /* Media Query para pantallas extra pequeñas (hasta 480px) */
@@ -200,12 +204,9 @@
     }
 
     .produccion h3,
-    .mezcla h3 {
+    .mezcla h3, .grabacion h3, .otros h3 {
       font-size: 1.5rem; /* Tamaño de fuente aún más pequeño */
       padding-top: 15%;
-    }
-    .grabacion h3, .otros h3{
-        padding-bottom: 20%;
     }
     .produccion p,
     .grabacion p,
@@ -213,13 +214,10 @@
     .otros p {
         font-size: 0.9rem; /* Ajusta el tamaño del texto */
         line-height: 1.4; /* Mejora la legibilidad */
+        padding-bottom:15%;
+        text-align: center;
     }
-    .grabacion p, .otros p{
-      padding-top: 20%;
-    }
-    .produccion p, .mezcla p{
-      padding-bottom:15%;
-    }
+
 
     .produccion,
     .grabacion,
@@ -227,4 +225,8 @@
     .otros {
         padding: 1rem; /* Menos padding para pantallas muy pequeñas */
     }
+    .grabacion, .otros {
+      display: flex;
+      flex-direction: column-reverse;
+  }
 }
