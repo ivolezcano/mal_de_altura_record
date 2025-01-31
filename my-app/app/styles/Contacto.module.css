@@ -3,7 +3,6 @@
     width: 100%;
     height: 100vh;
     margin-top: 30%;
-    padding-bottom: 55%;
     background-color: #1E1E1E;
     background-size: cover;
     background-position: center;
@@ -38,15 +37,8 @@
   .form {
     color: white;
     max-width: 500px;
-    margin: 0 auto; /* Centra el formulario */
+    margin: 0 auto; 
     padding: 20px;
-  }
-  
-  .label {
-    font-size: 0.9rem;
-    color: white;
-    margin-bottom: 5px;
-    display: block; /* Para que quede encima del campo */
   }
   
   .input,
@@ -57,7 +49,7 @@
     font-size: 0.95rem;
     border: 1px solid #ccc;
     border-radius: 6px;
-    background-color: transparent; /* Fondo transparente */
+    background-color: transparent;
     color: white;
     outline: none;
     transition: border-color 0.3s ease;
@@ -65,53 +57,53 @@
   
   .input:focus,
   .textarea:focus {
-    border-color: #EA5008; /* Azul al enfocar */
-    background-color: rgba(0, 123, 255, 0.05); /* Sutil fondo azul */
+    border-color: #EA5008; 
+    background-color: rgba(0, 123, 255, 0.05); 
   }
   
   .textarea {
     resize: none;
-    height: 100px; /* Altura fija para textarea */
+    height: 100px; 
   }
   
   .button {
-    background-color: transparent; /* Fondo transparente */
-    color: #EA5008; /* Texto azul */
+    background-color: transparent; 
+    color: #EA5008;
     margin-top: 5%;
     font-size: 1rem;
     padding: 10px 15px;
-    border: 1px solid #EA5008; /* Borde azul */
+    border: 1px solid #EA5008;
     border-radius: 6px;
     cursor: pointer;
     transition: all 0.3s ease;
   }
   
   .button:hover {
-    background-color: #EA5008; /* Fondo azul al pasar el ratón */
-    color: #fff; /* Texto blanco */
+    background-color: #EA5008; 
+    color: #fff; 
   }
   .status {
     font-size: 0.95rem;
-    color: #fff; /* Texto blanco */
-    background-color: rgba(0, 123, 255, 0.1); /* Fondo azul suave */
-    border: 1px solid #209d0f; /* Borde azul */
+    color: #fff; 
+    background-color: rgba(0, 123, 255, 0.1);
+    border: 1px solid #209d0f; 
     border-radius: 6px;
     padding: 10px;
     margin-top: 10px;
     text-align: center;
     font-weight: bold;
-    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Sombra sutil */
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); 
     transition: all 0.3s ease;
   }
   
   .status.success {
-    background-color: rgba(40, 167, 69, 0.1); /* Verde suave */
-    border-color: #28a745; /* Borde verde */
+    background-color: rgba(40, 167, 69, 0.1); 
+    border-color: #28a745; 
   }
   
   .status.error {
-    background-color: rgba(220, 53, 69, 0.1); /* Rojo suave */
-    border-color: #dc3545; /* Borde rojo */
+    background-color: rgba(220, 53, 69, 0.1);
+    border-color: #dc3545; 
   }
   
   @media (max-width: 768px) {
@@ -142,7 +134,7 @@
   
   @media (max-width: 480px) {
     .contactoContainer{
-      margin-top: 155%;
+      margin-top: -24%;
     }
     .form {
       padding: 10px;
@@ -160,3 +152,14 @@
     }
   }
   
+  @media (max-width: 360px) and (max-height: 740px) {
+    .contactoContainer{
+      margin-top: -1%;
+    }
+}
+
+@media (max-width: 375px) and (max-height: 667px) {
+  .contactoContainer{
+    margin-top: 19%;
+  }
+}
