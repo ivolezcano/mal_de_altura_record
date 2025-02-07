@@ -1,35 +1,36 @@
 .trabajosContainer {
+    padding-top: 2%; /* Reduced padding */
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: white;
     color: black;
     display: flex;
     justify-content: center;
-  }
-
+    padding-bottom: 2%;
+}
 
 .imagenUnique {
-    width: 363.41px; /* Ancho fijo */
-    height: 363.41px; /* Alto fijo */
-    object-fit: cover; /* Asegura que la imagen se recorte adecuadamente */
+    width: 363.41px; /* Fixed width */
+    height: 363.41px; /* Fixed height */
+    object-fit: cover; /* Ensures the image is cropped properly */
     transition: transform 0.3s ease-in-out;
 }
-  
+
 .imagenContainer {
-position: relative;
-width: 100%; /* Ancho fijo */
-height: 100%; /* Alto fijo */
-overflow: hidden;
-border-radius: 1rem;
+    position: relative;
+    width: 100%; /* Fixed width */
+    height: 100%; /* Fixed height */
+    overflow: hidden;
+    border-radius: 1rem;
 }
-  
-  .imagenContainer:hover .imagenUnique {
+
+.imagenContainer:hover .imagenUnique {
     pointer-events: auto;
     transform: scale(1.1);
-  }
-  
-  .imagenOverlay {
+}
+
+.imagenOverlay {
     position: absolute;
     pointer-events: none; 
     top: 0;
@@ -42,19 +43,20 @@ border-radius: 1rem;
     align-items: center;
     justify-content: center;
     transition: opacity 0.3s ease-in-out;
-  }
-  
-  .imagenContainer:hover .imagenOverlay {
+}
+
+.imagenContainer:hover .imagenOverlay {
     opacity: 1;
     cursor: pointer;
-  }
-  
-  .imagenText {
+}
+
+.imagenText {
     color: white;
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
-  }
+}
+
 .overlay {
     display: flex;
     flex-direction: column;
@@ -67,17 +69,17 @@ border-radius: 1rem;
 }
 
 .title {
-    font-size: 5rem; /* Tamaño inicial */
+    font-size: 5rem; /* Initial size */
     font-weight: bold;
     margin-bottom: 20px;
 }
-  
+
 .description {
-    font-size: 1.2rem; /* Tamaño inicial */
+    font-size: 1.2rem; /* Initial size */
     line-height: 1.5;
 }
 
-/* Estilos responsivos */
+/* Responsive styles */
 @media (max-width: 1024px) { /* Tablets */
     .imagenContainer {
         width: 220px;
@@ -88,7 +90,7 @@ border-radius: 1rem;
     }
 
     .title {
-        font-size: 4rem; /* Reduce el tamaño de la fuente */
+        font-size: 4rem; /* Reduce font size */
     }
 
     .description {
@@ -96,7 +98,7 @@ border-radius: 1rem;
     }
 }
 
-@media (max-width: 768px) { /* Dispositivos móviles grandes */
+@media (max-width: 768px) { /* Large mobile devices */
     .imagenContainer {
         width: 180px;
         height: 180px;
@@ -106,7 +108,7 @@ border-radius: 1rem;
     }
 
     .content {
-        margin-top: 5%; /* Reduce el espacio superior */
+        margin-top: 5%; /* Reduce top space */
     }
 
     .title {
@@ -118,25 +120,25 @@ border-radius: 1rem;
     }
 }
 
-@media (max-width: 480px) { /* Teléfonos móviles pequeños */
+@media (max-width: 480px) { /* Small mobile phones */
     .overlay {
         width: 100%;
-        padding: 0 10px; /* Añade espacio lateral */
+        padding: 0 10px; /* Add side space */
     }
 
     .title {
         font-size: 2.5rem;
-        text-align: center; /* Centra el texto */
+        text-align: center; /* Center text */
     }
 
     .description {
         font-size: 0.8rem;
-        text-align: justify; /* Mejora la lectura */
+        text-align: justify; /* Improve readability */
     }
     .imagenContainer {
         position: relative;
-        width: 100%; /* Ancho fijo */
-        height: 180px; /* Alto fijo */
+        width: 100%; /* Fixed width */
+        height: 180px; /* Fixed height */
     }
     .imagenUnique {
         width: 100%;
