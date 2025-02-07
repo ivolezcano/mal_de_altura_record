@@ -41,6 +41,7 @@
   
   .input,
   .textarea {
+    cursor: pointer;
     width: 100%;
     margin-top: 3%;
     padding: 10px;

@@ -264,8 +264,7 @@
 
 .bordeBanner{
     background-color: #FFF1EB;
-    margin: 2%;
-    padding: 3% 2%;
+    padding: 2rem 2rem;
     border-radius: 20px;
 }
 
@@ -375,9 +374,6 @@
 
 /* Teléfonos pequeños (vertical, menos de 360px) */
 @media (max-width: 359px) {
-  .bannerBloques{
-    margin-top: -30%;
-  }
   .bannerBloques2{
     margin-top: -60%;
   }
@@ -412,15 +408,3 @@
   }
 }
 
-/* Tablet estándar (768px a 1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .bannerBloques{
-    margin-top: -35%;
-  }
-  .bannerBloques2{
-    margin-top: -50%;
-  }
-  .bannerBloques3{
-    margin-top: -20%
-  }
-}
